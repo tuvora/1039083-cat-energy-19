@@ -33,6 +33,103 @@
     </header>
     <!-- Конец Шапки сайта -->
 
+    <main class="page-main page-main--form">
+
+
+      <section class="section-form">
+        <div class="section-form__wrapper">
+          <h1 class="section-form__title main-title">Подбор программы</h1>
+
+          <p class="section-form__description">Заполните анкету и мы подберем программу питания для вашего кота</p>
+
+          <form action="https://echo.htmlacademy.ru" method="post" class="section-form__form user-form">
+            <fieldset class="user-form__cat-description">
+              <legend class="visually-hidden">Персональная информация о коте</legend>
+
+              <label for="catDescriptionName" class="user-form__label">Имя:*</label>
+              <input type="text" name="catDescriptionName" id="catDescriptionName" class="user-form__field" placeholder="Барсик" required>
+
+              <label for="catDescriptionWeight" class="user-form__label">Вес (кг):*</label>
+              <input type="number" name="catDescriptionWeight" id="catDescriptionWeight" class="user-form__field" min="1" max="20" placeholder="7" required>
+
+              <label for="catDescriptionYears" class="user-form__label">Возраст (лет):</label>
+              <input type="number" name="catDescriptionYears" id="catDescriptionYears" class="user-form__field" min="0" max="20" placeholder="7">
+
+            </fieldset>
+
+            <fieldset class="user-form__radio-category radio-category">
+              <legend class="visually-hidden">Подберите категорию</legend>
+
+              <label for="catRadioCategorySlim" class="radio-category__label">Похудение</label>
+              <input type="radio" name="catRadioCategory" id="catRadioCategorySlim" class="radio-category__item" value="Похудение" checked>
+
+              <label for="catRadioCategoryPro" class="radio-category__label">Набор массы</label>
+              <input type="radio" name="catRadioCategory" id="catRadioCategoryPro" class="radio-category__item" value="Набор массы">
+
+              <label for="catRadioCategoryHelp" class="radio-category__label">Не знаю (Нужен ваш совет)</label>
+              <input type="radio" name="catRadioCategory" id="catRadioCategoryHelp" class="radio-category__item" value="Не знаю (Нужен ваш совет)">
+
+            </fieldset>
+
+            <fieldset class="user-form__contacts-info">
+              <legend class="user-form__title">Контактные данные (владельца кота)</legend>
+
+              <label for="ownerContactEmail" class="user-form__label">E-mail:*</label>
+              <input type="email" name="ownerContactEmail" id="ownerContactEmail" class="user-form__field user-form__field--email" placeholder="kuklachev@gmail.com" required>
+
+              <label for="ownerContactPhone" class="user-form__label">Телефон:*</label>
+              <input type="tel" name="ownerContactPhone" id="ownerContactPhone" class="user-form__field user-form__field--phone" placeholder="8 (960) 900-60-90" required>
+
+            </fieldset>
+
+            <fieldset class="user-form__comment">
+              <legend class="user-form__title">Комментарий</legend>
+
+              <textarea name="userFormComment" class="user-form__comment-field" value="Расскажите обо всех повадках кота">
+
+              </textarea>
+            </fieldset>
+
+            <fieldset class="user-form__extra extra-checkbox">
+              <legend class="user-form__title">Дополнительно</legend>
+
+              <label for="userFormExtraSugar" class="extra-checkbox__label">Сахарозаменитель</label>
+              <input type="checkbox" name="userFormExtra" id="userFormExtraSugar" class="extra-checkbox__item" value="Сахарозаменитель" checked>
+
+              <label for="userFormExtraWater" class="extra-checkbox__label">Питьевая вода</label>
+              <input type="checkbox" name="userFormExtra" id="userFormExtraWater" class="extra-checkbox__item" value="Питьевая вода">
+
+              <label for="userFormExtraMilk" class="extra-checkbox__label">Молоко</label>
+              <input type="checkbox" name="userFormExtra" id="userFormExtraMilk" class="extra-checkbox__item" value="Молоко">
+
+              <label for="userFormExtraVitamins" class="extra-checkbox__label">Витамины</label>
+              <input type="checkbox" name="userFormExtra" id="userFormExtraVitamins" class="extra-checkbox__item" value="Витамины">
+            </fieldset>
+
+            <input type="submit" class="button user-form__button" value="Отправить заявку">
+
+            <p class="user-form__legen">* — Обязательные поля</p>
+          </form>
+        </div>
+      </section>
+
+      <!-- Контакты -->
+      <section class="contacts">
+        <div class="contacts__wrapper">
+          <h2 class="visually-hidden">Наши контакты</h2>
+
+          <b class="contacts__invite">приглашаем к сотрудничеству дилеров!</b>
+          <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+        </div>
+
+        <div class="contacts__map">
+          <img src="https://via.placeholder.com/320x400" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург" class="contacts__map-image">
+        </div>
+      </section>
+      <!-- /Контакты -->
+
+    </main>
+
 
     <footer class="page-footer">
       <div class="page-footer__wrapper">
