@@ -2,6 +2,8 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
     <title>HTML Academy: Кэт энерджи</title>
   </head>
   <body>
@@ -13,18 +15,18 @@
         </a>
 
         <!-- Навигация -->
-        <nav class="main-nav">
+       <nav class="main-nav">
           <button class="main-nav__toggle" type="button">Открыть меню</button>
 
           <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--active">
-              <a href="index.html">Главная</a>
+              <a class="site-list__link">Главная</a>
             </li>
             <li class="site-list__item">
-              <a>Каталог продукции</a>
+              <a href="catalog.html" class="site-list__link">Каталог продукции</a>
             </li>
             <li class="site-list__item">
-              <a href="form.html">Подбор программы</a>
+              <a href="form.html" class="site-list__link">Подбор программы</a>
             </li>
           </ul>
         </nav>
@@ -34,10 +36,10 @@
     <!-- Конец Шапки сайта -->
 
     <main class="page-main page-main--catalog">
-      <h1 class="main-title">Каталог продукции</h1>
+      <h1 class="page-main__title page-main__wrapper">Каталог продукции</h1>
 
       <section class="catalog catalog__wrapper">
-        <h2 class="visually-hiiden">Товары каталога</h2>
+        <h2 class="visually-hidden">Товары каталога</h2>
         <ul class="catalog__list">
           <!-- Карточка товара -->
           <li class="catalog__item good">
@@ -77,7 +79,7 @@
                   </td>
                 </tr>
 
-                <button class="button" type="button">Заказать</button>
+                <button class="button good__button" type="button">Заказать</button>
               </table>
             </div>
           </li>
@@ -348,7 +350,7 @@
       <!-- Дополнительные товары -->
       <section class="extra">
         <div class="extra__wrapper">
-          <h2 class="extra__title section-title">Дополнительные товары</h2>
+          <h2 class="extra__title section-title section-title--mini">Дополнительные товары</h2>
 
           <ul class="extra__list">
             <li class="extra__item">
@@ -401,7 +403,7 @@
           </ul>
 
           <div class="extra__gift gift">
-            <img src="https://via.placeholder.com/280x280" alt="Чехол в подарок" class="gift__image">
+            <img src="img/gift-photo-mobile@1x.jpg" alt="Чехол в подарок" class="gift__image">
 
             <div class="gift__info">
               <span class="gift__icon">
