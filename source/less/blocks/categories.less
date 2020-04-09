@@ -37,3 +37,24 @@
   text-transform: uppercase;
   color: @black;
 }
+
+@media (min-width: @tablet-width) {
+  .categories__wrapper {
+    .tablet-wrapper();
+  }
+}
+
+@media (min-width: @desctop-width) {
+  .categories__wrapper {
+    .desctop-wrapper();
+  }
+
+  .categories__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .categories__item {
+    width: 570px;
+  }
+}

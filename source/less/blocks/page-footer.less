@@ -1,7 +1,9 @@
+.page-footer {
+  background-color: @background-color;
+}
+
 .page-footer__wrapper {
   padding: 0 20px;
-
-  background-color: @background-color;
 }
 
 .page-footer__logo {
@@ -12,4 +14,19 @@
 .page-footer__social {
   border-top: 1px solid @light-grey;
   border-bottom: 1px solid @light-grey;
+}
+
+@media (min-width: @tablet-width) {
+  .page-footer__wrapper {
+    .tablet-wrapper();
+
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: @desctop-width) {
+  .page-footer__wrapper {
+    .desctop-wrapper();
+  }
 }

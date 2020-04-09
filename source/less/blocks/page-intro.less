@@ -10,22 +10,68 @@
   padding: 0 20px;
 }
 
-.page-intro__header {
+.page-intro__title {
+  padding-top: 30px;
+  margin-bottom: 20px;
+
   font-family: @site-font;
+  font-size: 36px;
   line-height: 1;
+  font-weight: 400;
   text-align: center;
   color: @white;
 }
 
-.page-intro__title {
-  font-size: 36px;
-  font-weight: 400;
+.page-intro__slogan {
+  display: block;
 
-  padding-top: 30px;
-  margin-bottom: 20px;
+  font-family: @site-font;
+  font-size: 14px;
+  line-height: 1;
+  font-weight: 400;
+  text-align: center;
+  color: @white;
 }
 
-.page-intro__slogan {
-  font-size: 14px;
-  font-weight: 400;
+@media (min-width: @tablet-width) {
+  .page-intro {
+    min-height: 850px;
+
+    background-image: none;
+  }
+
+  .page-intro__wrapper {
+    .tablet-wrapper();
+  }
+
+  .page-intro__title {
+    color: @black;
+  }
+
+  .page-intro__slogan {
+    color: @black;
+  }
+
+  .page-intro__image {
+    position: absolute;
+    z-index: -1;
+    height: 600px;
+  }
+}
+
+
+@media (min-width: @desctop-width) {
+  .page-intro__wrapper {
+    .desctop-wrapper();
+  }
+
+  .page-intro__content {
+    position: relative;
+    padding-right: 50%;
+  }
+
+  .page-intro__image {
+    top: 0;
+    right: 0;
+  }
 }

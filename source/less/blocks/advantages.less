@@ -26,3 +26,30 @@
 .advantages__description {
   font-size: 14px;
 }
+
+@media (min-width: @tablet-width) {
+  .advantages__wrapper {
+    .tablet-wrapper();
+  }
+
+  .advantages__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .advantages__item {
+    width: 50%;
+    min-height: 250px;
+  }
+}
+
+@media (min-width: @desctop-width) {
+  .advantages__wrapper {
+    .desctop-wrapper();
+  }
+
+  .advantages__item {
+    width: 25%;
+    min-height: 250px;
+  }
+}
