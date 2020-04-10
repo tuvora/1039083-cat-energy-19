@@ -8,3 +8,28 @@
 
   border-bottom: 1px solid @light-grey;
 }
+
+@media (min-width: @tablet-width) {
+  .catalog__wrapper {
+    .tablet-wrapper();
+  }
+
+  .catalog__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .catalog__item {
+    width: 45%;
+  }
+}
+
+@media (min-width: @desctop-width) {
+  .catalog__wrapper {
+    .desctop-wrapper();
+  }
+
+  .catalog__item {
+    width: 23%;
+  }
+}
