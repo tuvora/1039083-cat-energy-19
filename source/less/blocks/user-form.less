@@ -2,6 +2,10 @@
   border: none;
 }
 
+.user-form__item {
+  display: block;
+}
+
 .user-form__label {
   font-family: @site-font;
   font-size: 16px;
@@ -32,4 +36,20 @@
 
 .user-form__legen {
   font-size: 14px;
+}
+
+@media (min-width: @desctop-width) {
+  .user-form__cat-info-box {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .user-form__contacts-content {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .user-form__submit-box {
+    display: flex;
+  }
 }
