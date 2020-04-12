@@ -1,7 +1,24 @@
+.extra-checkbox__content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .extra-checkbox__label {
   font-family: @site-font;
   font-size: 16px;
   font-weight: 400;
   text-transform: uppercase;
   color: @black;
+}
+
+@media (min-width: @tablet-width) {
+  .extra-checkbox__item {
+    width: 40%;
+  }
+}
+
+@media (min-width: @desctop-width) {
+  .extra-checkbox__item {
+    width: 20%;
+  }
 }

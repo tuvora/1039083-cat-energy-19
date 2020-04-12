@@ -1,5 +1,27 @@
+.gift {
+  position: relative;
+}
+
+.gift__info {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
 .gift__description {
   font-size: 16px;
   font-weight: 400;
   color: @white;
+}
+
+@media (min-width: @tablet-width) {
+  .gift__info {
+    display: flex;
+  }
+}
+
+@media (min-width: @desctop-width) {
+  .gift__info {
+    display: block;
+  }
 }

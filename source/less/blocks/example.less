@@ -20,3 +20,21 @@
   text-transform: uppercase;
   color: @black;
 }
+
+@media (min-width: @tablet-width) {
+  .example__wrapper {
+    .tablet-wrapper();
+  }
+}
+
+@media (min-width: @desctop-width) {
+  .example__wrapper {
+    .desctop-wrapper();
+
+    display: flex;
+  }
+
+  .exemple__info {
+    width: 50%;
+  }
+}

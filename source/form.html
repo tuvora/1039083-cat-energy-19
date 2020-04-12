@@ -44,42 +44,63 @@
           <p class="section-form__description">Заполните анкету и мы подберем программу питания для вашего кота</p>
 
           <form action="https://echo.htmlacademy.ru" method="post" class="section-form__form user-form">
-            <fieldset class="user-form__fieldset user-form__fieldset--cat-description">
-              <legend class="visually-hidden">Персональная информация о коте</legend>
 
-              <label for="cat-description-name" class="user-form__label">Имя:*</label>
-              <input type="text" name="cat-description-name" id="cat-description-name" class="user-form__field" placeholder="Барсик" required>
+            <div class="user-form__cat-info-box">
+              <fieldset class="user-form__fieldset user-form__fieldset--cat-description">
+                <legend class="visually-hidden">Персональная информация о коте</legend>
 
-              <label for="cat-description-weight" class="user-form__label">Вес (кг):*</label>
-              <input type="number" name="cat-description-weight" id="cat-description-weight" class="user-form__field" min="1" max="20" placeholder="7" required>
+                <div class="user-form__item">
+                  <label for="cat-description-name" class="user-form__label">Имя:*</label>
+                  <input type="text" name="cat-description-name" id="cat-description-name" class="user-form__field" placeholder="Барсик" required>
+                </div>
 
-              <label for="cat-description-years" class="user-form__label">Возраст (лет):</label>
-              <input type="number" name="cat-description-years" id="cat-description-years" class="user-form__field" min="0" max="20" placeholder="7">
+                <div class="user-form__item">
+                  <label for="cat-description-weight" class="user-form__label">Вес (кг):*</label>
+                  <input type="number" name="cat-description-weight" id="cat-description-weight" class="user-form__field" min="1" max="20" placeholder="7" required>
+                </div>
 
-            </fieldset>
+                <div class="user-form__item">
+                  <label for="cat-description-years" class="user-form__label">Возраст (лет):</label>
+                  <input type="number" name="cat-description-years" id="cat-description-years" class="user-form__field" min="0" max="20" placeholder="7">
+                </div>
 
-            <fieldset class="user-form__fieldset user-form__fieldset--radio-category radio-category">
-              <legend class="visually-hidden">Подберите категорию</legend>
+              </fieldset>
 
-              <label for="cat-radio-category-slim" class="radio-category__label">Похудение</label>
-              <input type="radio" name="cat-radio-category" id="cat-radio-category-slim" class="radio-category__item" value="Похудение" checked>
+              <fieldset class="user-form__fieldset user-form__fieldset--radio-category radio-category">
+                <legend class="visually-hidden">Подберите категорию</legend>
 
-              <label for="cat-radio-category-pro" class="radio-category__label">Набор массы</label>
-              <input type="radio" name="cat-radio-category" id="cat-radio-category-pro" class="radio-category__item" value="Набор массы">
+                <div class="user-form__item">
+                  <label for="cat-radio-category-slim" class="radio-category__label">Похудение</label>
+                  <input type="radio" name="cat-radio-category" id="cat-radio-category-slim" class="radio-category__item" value="Похудение" checked>
+                </div>
 
-              <label for="cat-radio-category-help" class="radio-category__label">Не знаю (Нужен ваш совет)</label>
-              <input type="radio" name="cat-radio-category" id="cat-radio-category-help" class="radio-category__item" value="Не знаю (Нужен ваш совет)">
+                <div class="user-form__item">
+                  <label for="cat-radio-category-pro" class="radio-category__label">Набор массы</label>
+                  <input type="radio" name="cat-radio-category" id="cat-radio-category-pro" class="radio-category__item" value="Набор массы">
+                </div>
 
-            </fieldset>
+                <div class="user-form__item">
+                  <label for="cat-radio-category-help" class="radio-category__label">Не знаю (Нужен ваш совет)</label>
+                  <input type="radio" name="cat-radio-category" id="cat-radio-category-help" class="radio-category__item" value="Не знаю (Нужен ваш совет)">
+                </div>
+
+              </fieldset>
+            </div>
 
             <fieldset class="user-form__fieldset user-form__fieldset--contacts-info">
               <legend class="user-form__title">Контактные данные (владельца кота)</legend>
 
-              <label for="owner-contact-email" class="user-form__label">E-mail:*</label>
-              <input type="email" name="owner-contact-email" id="owner-contact-email" class="user-form__field user-form__field--email" placeholder="kuklachev@gmail.com" required>
+              <div class="user-form__contacts-content">
+                <div class="user-form__item">
+                  <label for="owner-contact-email" class="user-form__label">E-mail:*</label>
+                  <input type="email" name="owner-contact-email" id="owner-contact-email" class="user-form__field user-form__field--email" placeholder="kuklachev@gmail.com" required>
+                </div>
 
-              <label for="owner-contact-phone" class="user-form__label">Телефон:*</label>
-              <input type="tel" name="owner-contact-phone" id="owner-contact-phone" class="user-form__field user-form__field--phone" placeholder="8 (960) 900-60-90" required>
+                <div class="user-form__item">
+                  <label for="owner-contact-phone" class="user-form__label">Телефон:*</label>
+                  <input type="tel" name="owner-contact-phone" id="owner-contact-phone" class="user-form__field user-form__field--phone" placeholder="8 (960) 900-60-90" required>
+                </div>
+              </div>
 
             </fieldset>
 
@@ -87,29 +108,41 @@
               <legend class="user-form__title">Комментарий</legend>
 
               <textarea name="user-form-comment" class="user-form__comment-field" placeholder="Расскажите обо всех повадках кота">
-
               </textarea>
             </fieldset>
 
             <fieldset class="user-form__fieldset user-form__fieldset--extra extra-checkbox">
               <legend class="user-form__title">Дополнительно</legend>
 
-              <label for="user-form-extra-sugar" class="extra-checkbox__label">Сахарозаменитель</label>
-              <input type="checkbox" name="user-form-extra-sugar" id="user-form-extra-sugar" class="extra-checkbox__item" value="Сахарозаменитель" checked>
+              <div class="extra-checkbox__content">
+                <div class="user-form__item extra-checkbox__item">
+                  <label for="user-form-extra-sugar" class="extra-checkbox__label">Сахарозаменитель</label>
+                  <input type="checkbox" name="user-form-extra-sugar" id="user-form-extra-sugar" class="extra-checkbox__item" value="Сахарозаменитель" checked>
+                </div>
 
-              <label for="user-form-extra-water" class="extra-checkbox__label">Питьевая вода</label>
-              <input type="checkbox" name="user-form-extra-water" id="user-form-extra-water" class="extra-checkbox__item" value="Питьевая вода">
+                <div class="user-form__item extra-checkbox__item">
+                  <label for="user-form-extra-water" class="extra-checkbox__label">Питьевая вода</label>
+                  <input type="checkbox" name="user-form-extra-water" id="user-form-extra-water" class="extra-checkbox__item" value="Питьевая вода">
+                </div>
 
-              <label for="user-form-extra-milk" class="extra-checkbox__label">Молоко</label>
-              <input type="checkbox" name="user-form-extra-milk" id="user-form-extra-milk" class="extra-checkbox__item" value="Молоко">
+                <div class="user-form__item extra-checkbox__item">
+                  <label for="user-form-extra-milk" class="extra-checkbox__label">Молоко</label>
+                  <input type="checkbox" name="user-form-extra-milk" id="user-form-extra-milk" class="extra-checkbox__item" value="Молоко">
+                </div>
 
-              <label for="user-form-extra-vitamins" class="extra-checkbox__label">Витамины</label>
-              <input type="checkbox" name="user-form-extra-vitamins" id="user-form-extra-vitamins" class="extra-checkbox__item" value="Витамины">
+                <div class="user-form__item extra-checkbox__item">
+                  <label for="user-form-extra-vitamins" class="extra-checkbox__label">Витамины</label>
+                  <input type="checkbox" name="user-form-extra-vitamins" id="user-form-extra-vitamins" class="extra-checkbox__item" value="Витамины">
+                </div>
+              </div>
+
             </fieldset>
 
-            <input type="submit" class="button user-form__button" value="Отправить заявку">
+            <div class="user-form__submit-box">
+              <input type="submit" class="button user-form__button" value="Отправить заявку">
+              <p class="user-form__legen">* — Обязательные поля</p>
+            </div>
 
-            <p class="user-form__legen">* — Обязательные поля</p>
           </form>
         </div>
       </section>
@@ -117,14 +150,16 @@
       <!-- Контакты -->
       <section class="contacts">
         <div class="contacts__wrapper">
-          <h2 class="visually-hidden">Наши контакты</h2>
+          <div class="contacts__info">
+            <h2 class="visually-hidden">Наши контакты</h2>
 
-          <b class="contacts__invite">приглашаем к сотрудничеству дилеров!</b>
-          <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+            <b class="contacts__invite">приглашаем к сотрудничеству дилеров!</b>
+            <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+          </div>
         </div>
 
         <div class="contacts__map">
-          <img src="https://via.placeholder.com/320x400" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург" class="contacts__map-image">
+          <img src="img/bg-map-mobile@1x.png" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург" class="contacts__map-image">
         </div>
       </section>
       <!-- /Контакты -->
