@@ -1,17 +1,26 @@
+.main-nav__toggle {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
 .main-nav__list {
   display: block;
-
-  font-family: @site-font;
 
   .reset-list();
 }
 
 @media (min-width: @tablet-width) {
+  .main-nav {
+    margin-left: auto;
+  }
+
   .main-nav__toggle {
     display: none;
   }
 
   .main-nav__list {
     display: flex;
+    align-items: center;
   }
 }

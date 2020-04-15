@@ -8,12 +8,22 @@
 
 .page-footer__logo {
   display: block;
-  padding: 40px 0 30px;
+  padding: 35px 0;
+}
+
+.page-footer__logo img {
+  display: block;
+  width: 128px;
+  margin: 0 auto;
 }
 
 .page-footer__social {
   border-top: 1px solid @light-grey;
   border-bottom: 1px solid @light-grey;
+}
+
+.page-footer__copyright {
+  padding: 22px 0;
 }
 
 @media (min-width: @tablet-width) {
@@ -22,6 +32,11 @@
 
     display: flex;
     justify-content: space-between;
+    align-items: center;
+  }
+
+  .page-footer__social  {
+    border: none;
   }
 }
 
