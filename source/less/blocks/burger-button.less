@@ -1,0 +1,41 @@
+.burger-button {
+  position: relative;
+  box-sizing: content-box;
+
+  width: 24px;
+  height: 19px;
+  padding: 10px;
+
+  background-color: transparent;
+  border: none;
+}
+
+.burger-button__line {
+  display: inline-block;
+  width: 24px;
+  height: 2px;
+  vertical-align: middle;
+
+  background-color: #222222;
+}
+
+.burger-button::before,
+.burger-button::after {
+  content: "";
+  position: absolute;
+  left: 10px;
+
+  display: block;
+  width: 24px;
+  height: 2px;
+
+  background-color: #222222;
+}
+
+.burger-button::before {
+  top: 10px;
+}
+
+.burger-button::after {
+  bottom: 10px;
+}

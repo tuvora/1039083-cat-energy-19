@@ -11,21 +11,26 @@
     <header class="page-header">
       <div class="page-header__wrapper">
         <a class="page-header__logo">
-          <img src="https://via.placeholder.com/33x38" alt="Cat Energy" class="page-header__logo-image" />
+          <img src="https://via.placeholder.com/33x38" width="33" height="38" alt="Cat Energy" class="page-header__logo-image" />
+
+          <img src="https://via.placeholder.com/101x18" width="101" height="18" alt="Cat Energy" class="page-header__logo-header">
         </a>
 
         <!-- Навигация -->
         <nav class="main-nav">
-          <button class="main-nav__toggle" type="button">Открыть меню</button>
+          <button class="main-nav__toggle burger-button" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+            <span class="burger-button__line"></span>
+          </button>
 
           <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item--active">
+            <li class="site-list__item">
               <a href="index.html" class="site-list__link">Главная</a>
             </li>
             <li class="site-list__item">
               <a href="catalog.html" class="site-list__link">Каталог продукции</a>
             </li>
-            <li class="site-list__item">
+            <li class="site-list__item  site-list__item--active">
               <a class="site-list__link">Подбор программы</a>
             </li>
           </ul>

@@ -8,15 +8,20 @@
   </head>
   <body>
     <!-- Шапка сайта -->
-    <header class="page-header">
+    <header class="page-header page-header--home">
       <div class="page-header__wrapper">
         <a class="page-header__logo">
-          <img src="https://via.placeholder.com/33x38" alt="Cat Energy" class="page-header__logo-image" />
+          <img src="https://via.placeholder.com/33x38" width="33" height="38" alt="Cat Energy" class="page-header__logo-image" />
+
+          <img src="https://via.placeholder.com/101x18" width="101" height="18" alt="Cat Energy" class="page-header__logo-header">
         </a>
 
         <!-- Навигация -->
         <nav class="main-nav">
-          <button class="main-nav__toggle" type="button">Открыть меню</button>
+          <button class="main-nav__toggle burger-button" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+            <span class="burger-button__line"></span>
+          </button>
 
           <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--active">
@@ -44,7 +49,7 @@
           <div class="page-intro__content">
             <h1 class="page-intro__title">Функциональное питание для котов</h1>
             <b class="page-intro__slogan">Занялся собой? Займись котом!</b>
-            <img src="https://via.placeholder.com/280x280" alt="Cat Energy Pro Курица 500г" class="page-intro__image">
+            <img src="img/index-can-mobile@1x.png" width="280" height="271" alt="Cat Energy Pro Курица 500г" class="page-intro__image">
             <a href="form.html" class="button page-intro__button">Подобрать программу</a>
           </div>
 
@@ -62,7 +67,7 @@
 
             <!-- Одна категория -->
             <div class="categories__item">
-              <img src="https://via.placeholder.com/50x50" alt="Похудение с Cat Energy" class="categories__icon">
+              <img src="https://via.placeholder.com/50x50" width="50" height="50" alt="Похудение с Cat Energy" class="categories__icon">
               <h3 class="categories__title">Похудение</h3>
 
               <p class="categories__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
@@ -97,25 +102,25 @@
         <ul class="advantages__list">
 
           <li class="advantages__item">
-            <span class="advantages__icon"><img src="https://via.placeholder.com/30x30" alt="Содержит полезные вещества" class="advantages__icon-image"></span>
+            <span class="advantages__icon"><img src="img/advantage-leaf@1x.png" width="50" height="50" alt="Содержит полезные вещества" class="advantages__icon-image"></span>
 
             <p class="advantages__description">Функциональное питание содержит только полезные питательные вещества.</p>
           </li>
 
           <li class="advantages__item">
-            <span class="advantages__icon"><img src="https://via.placeholder.com/30x30" alt="Удобство в приготовлении" class="advantages__icon-image"></span>
+            <span class="advantages__icon"><img src="img/advantage-powder@1x.png" width="50" height="50" alt="Удобство в приготовлении" class="advantages__icon-image"></span>
 
             <p class="advantages__description">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
           </li>
 
           <li class="advantages__item">
-            <span class="advantages__icon"><img src="https://via.placeholder.com/30x30" alt="Отлично заменяет обычную кошачью еду" class="advantages__icon-image"></span>
+            <span class="advantages__icon"><img src="img/advantage-dining@1x.png" width="50" height="50" alt="Отлично заменяет обычную кошачью еду" class="advantages__icon-image"></span>
 
             <p class="advantages__description">Замените один-два приема обычной еды на наше функциональное питание.</p>
           </li>
 
           <li class="advantages__item">
-            <span class="advantages__icon"><img src="https://via.placeholder.com/30x30" alt="Изменения уже через месяц" class="advantages__icon-image"></span>
+            <span class="advantages__icon"><img src="img/advantage-clock@1x.png" width="50" height="50" alt="Изменения уже через месяц" class="advantages__icon-image"></span>
 
             <p class="advantages__description">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
           </li>
@@ -186,7 +191,7 @@
       <div class="page-footer__wrapper">
 
         <a class="page-footer__logo">
-          <img src="https://via.placeholder.com/130x25" alt="Cat Energy" class="page-footer__logo-image">
+          <img src="https://via.placeholder.com/128x24" width="128" height="24" alt="Cat Energy" class="page-footer__logo-image">
         </a>
 
         <div class="page-footer__social social">
@@ -205,7 +210,7 @@
 
         <div class="page-footer__copyright copyright">
           <a href="https://htmlacademy.ru" class="copyright__link">HTML Academy</a>
-          <img src="https://via.placeholder.com/34x30" alt="HTML Academy" class="copyright__icon">
+          <img src="https://via.placeholder.com/34x30" width="34" height="30" alt="HTML Academy" class="copyright__icon">
         </div>
 
       </div><!-- /.page-footer__wrapper -->

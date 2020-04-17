@@ -1,41 +1,50 @@
 .page-intro {
+  position: relative;
+
   margin-bottom: 22px;
 
   background-image: url("../../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: 100% auto;
 }
 
 .page-intro__wrapper {
   padding: 0 20px;
 }
 
-.page-intro__title {
-  padding-top: 30px;
-  margin-bottom: 20px;
-
+.page-intro__content {
   font-family: @site-font;
-  font-size: 36px;
-  line-height: 1;
-  font-weight: 400;
   text-align: center;
   color: @white;
 }
 
+.page-intro__title {
+  padding-top: 22px;
+  margin-bottom: 30px;
+
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+}
+
+.page-intro__image {
+  width: 280px;
+  height: auto;
+}
+
 .page-intro__slogan {
   display: block;
+  margin-bottom: 29px;
 
-  font-family: @site-font;
   font-size: 14px;
-  line-height: 1;
+  line-height: 14px;
   font-weight: 400;
-  text-align: center;
-  color: @white;
 }
 
 @media (min-width: @tablet-width) {
   .page-intro {
     min-height: 850px;
+    margin-bottom: 0;
 
     background-image: none;
   }
@@ -44,18 +53,42 @@
     .tablet-wrapper();
   }
 
+  .page-intro__content {
+    width: 420px;
+    padding-left: 90px;
+
+    text-align: left;
+  }
+
   .page-intro__title {
+    margin-bottom: 38px;
+    padding-top: 38px;
+
+    font-size: 60px;
+    line-height: 60px;
     color: @black;
   }
 
   .page-intro__slogan {
+    margin-bottom: 48px;
+
+    font-size: 20px;
+    line-height: 20px;
     color: @black;
+  }
+
+  .page-intro__button {
+    display: inline-block;
+    padding: 15px 27px;
   }
 
   .page-intro__image {
     position: absolute;
+    bottom: 0;
+    right: 50%;
+    transform: translateX(50%);
     z-index: -1;
-    height: 600px;
+    width: 709px;
   }
 }
 
@@ -65,13 +98,31 @@
     .desctop-wrapper();
   }
 
+  .page-intro {
+    min-height: 700px;
+    margin-bottom: 80px;
+    padding-top: 166px;
+
+    background-image: url("../../img/index-background-desktop@1x.jpg");
+    background-position: right top;
+    background-size: 50%;
+  }
+
   .page-intro__content {
     position: relative;
-    padding-right: 50%;
+    padding-left: 0;
+  }
+
+  .page-intro__title {
+    padding-top: 59px;
   }
 
   .page-intro__image {
     top: 0;
     right: 0;
+    z-index: 10;
+    transform: translateX(100%);
+
+    width: 552px;
   }
 }
