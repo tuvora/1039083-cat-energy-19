@@ -1,0 +1,32 @@
+.checkbox__input {
+  display: none;
+}
+
+.checkbox__input + .checkbox__label::before {
+  content: "\2714";
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+  margin-right: 16px;
+  font-size: 20px;
+  font-weight: 900;
+  line-height: 22px;
+  text-align: center;
+  vertical-align: middle;
+  color: transparent;
+  border: 1px solid @light-grey;
+  transition: color ease 0.3s;
+}
+
+.checkbox__input:checked + .checkbox__label::before {
+  color: @green;
+}
+
+@media (min-width: @tablet-width) {
+  .checkbox__input + .checkbox__label::before {
+    width: 40px;
+    height: 40px;
+
+    font-size: 35px;
+  }
+}

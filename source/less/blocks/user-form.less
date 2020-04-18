@@ -1,21 +1,63 @@
 .user-form__fieldset {
   border: none;
+  border-bottom: 1px solid @light-grey;
+}
+
+.user-form__fieldset--cat-description {
+  padding-bottom: 23px;
+}
+
+.user-form__fieldset--radio-category {
+  padding: 21px 0;
+}
+
+.user-form__fieldset--contacts-info {
+  margin: 31px 0;
+
+  border-bottom: none;
+}
+
+.user-form__fieldset--extra {
+  margin: 31px 0;
+
+  border-bottom: none;
 }
 
 .user-form__item {
-  display: block;
+  display: flex;
+  align-items: center;
+  margin-bottom: 14px;
+}
+
+.user-form__item:last-child {
+  margin-bottom: 0;
 }
 
 .user-form__label {
+  flex-shrink: 0;
+  margin-right: 15px;
+
   font-family: @site-font;
   font-size: 16px;
+  line-height: 20px;
   font-weight: 400;
   text-transform: uppercase;
   color: @black;
 }
 
 .user-form__field {
-  margin-bottom: 15px;
+  width: 100%;
+  height: 45px;
+  padding: 10px 15px;
+
+  font-size: 16px;
+  line-height: 18px;
+
+  border: 1px solid @light-grey;
+}
+
+.user-form__comment {
+  border-bottom: none;
 }
 
 .user-form__title {
@@ -28,6 +70,15 @@
   color: @black;
 }
 
+.user-form__comment-field {
+  width: 100%;
+  height: 150px;
+
+  border: 1px solid @light-grey;
+
+  resize: none;
+}
+
 .user-form__button {
   width: 100%;
   margin-top: 35px;
@@ -36,6 +87,59 @@
 
 .user-form__legen {
   font-size: 14px;
+  text-align: center;
+}
+
+@media (min-width: @tablet-width) {
+  .user-form__fieldset {
+    border: none;
+  }
+
+  .user-form__fieldset--cat-description {
+    padding-bottom: 72px;
+  }
+
+  .user-form__fieldset--radio-category {
+    padding: 25px;
+
+    border: 1px solid @light-grey;
+  }
+
+  .user-form__fieldset--contacts-info {
+    margin: 79px 0 70px;
+  }
+
+  .user-form__fieldset--extra {
+    margin-top: 69px;
+    margin-bottom: 22px;
+  }
+
+  .user-form__title {
+    margin: 50px 0;
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .user-form__label {
+    font-size: 20px;
+  }
+
+  .user-form__field {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .user-form__submit-box {
+    display: flex;
+    align-items: center;
+  }
+
+  .user-form__button {
+    width: auto;
+    margin: 0;
+    margin-right: 60px;
+    padding: 10px 65px;
+  }
 }
 
 @media (min-width: @desctop-width) {
@@ -51,5 +155,42 @@
 
   .user-form__submit-box {
     display: flex;
+  }
+
+  .user-form__fieldset--cat-description {
+    width: 50%;
+    margin-right: 80px;
+    padding-bottom: 0;
+  }
+
+  .user-form__fieldset--radio-category {
+    width: 50%;
+  }
+
+  .user-form__item {
+    margin-bottom: 20px;
+  }
+
+  .user-form__field {
+    height: 52px;
+  }
+
+  .user-form__item--contacts {
+    width: 100%;
+    margin: 0;
+    margin-right: 80px;
+  }
+
+  .user-form__item--contacts:nth-child(2n) {
+    margin-right: 0;
+  }
+
+  .user-form__button {
+    padding: 15px 200px;
+  }
+
+  .user-form__legen {
+    font-size: 16px;
+    line-height: 16px;
   }
 }
