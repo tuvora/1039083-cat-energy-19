@@ -6,32 +6,39 @@
   padding: 0 20px;
 }
 
-.example__description {
-  font-size: 14px;
-  line-height: 18px;
-
-  margin: 20px 0;
-}
-
-.example__button {
-  font-family: @site-font;
-  font-size: 16px;
-  line-height: 20px;
-  text-transform: uppercase;
-  color: @black;
+.example__title {
+  padding: 30px 0;
 }
 
 @media (min-width: @tablet-width) {
+  .example {
+    background-color: @white;
+    border-top: 1px solid @light-grey;
+  }
+
   .example__wrapper {
     .tablet-wrapper();
+  }
+
+  .example__title {
+    padding: 50px 0 70px;
   }
 }
 
 @media (min-width: @desctop-width) {
+  .example {
+    border: none;
+  }
+
   .example__wrapper {
     .desctop-wrapper();
 
     display: flex;
+  }
+
+  .example__title {
+    padding-top: 0;
+    padding-bottom: 65px;
   }
 
   .exemple__info {

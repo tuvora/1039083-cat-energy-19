@@ -1,6 +1,7 @@
 .radio-category__label {
   font-family: @site-font;
   font-size: 16px;
+  line-height: 20px;
   font-weight: 400;
   text-transform: uppercase;
   color: @black;
@@ -8,4 +9,10 @@
 
 .radio-category__item {
   margin-bottom: 13px;
+}
+
+@media (min-width: @tablet-width) {
+  .radio-category__label {
+    font-size: 20px;
+  }
 }
