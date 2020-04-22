@@ -3,4 +3,81 @@
   padding: 22px 0;
 
   display: flex;
+  justify-content: center;
+}
+
+.social__item {
+  margin-right: 35px;
+}
+
+.social__item:last-child {
+  margin-right: 0;
+}
+
+.social__link {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 0;
+}
+
+.social__icon--vk {
+  width: 22px;
+}
+
+.social__icon--insta {
+  width: 16px;
+}
+
+.social__icon--fb {
+  width: 10px;
+}
+
+@media (min-width: @tablet-width) {
+  .social__item {
+    margin-right: 15px;
+  }
+
+  .social__link {
+    width: 40px;
+    height: 40px;
+  }
+
+  .social__icon--vk {
+    width: 30px;
+  }
+
+  .social__icon--insta {
+    width: 23px;
+  }
+
+  .social__icon--fb {
+    width: 14px;
+  }
+}
+
+@media (min-width: @desctop-width) {
+  .social__item {
+    margin-right: 15px;
+  }
+
+  .social__link {
+    width: 40px;
+    height: 40px;
+  }
+
+  .social__icon--vk {
+    width: 30px;
+  }
+
+  .social__icon--insta {
+    width: 23px;
+  }
+
+  .social__icon--fb {
+    width: 14px;
+  }
 }
