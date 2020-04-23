@@ -168,7 +168,13 @@
         </div>
 
         <div class="contacts__map">
-          <img src="img/bg-map-mobile@1x.png" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург" class="contacts__map-image">
+          <picture>
+            <source media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.png, img/bg-map-desktop@2x.png 2x">
+
+            <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png, img/bg-map-tablet@2x.png 2x">
+
+            <img src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург" class="contacts__map-image">
+          </picture>
         </div>
       </section>
       <!-- /Контакты -->
@@ -186,13 +192,19 @@
         <div class="page-footer__social social">
           <ul class="social__list">
             <li class="social__item">
-              <a href="#" class="social__link social__link--vkontakte">Мы Вконтакте</a>
+              <a href="#" class="social__link social__link--vkontakte">Мы Вконтакте
+                <img src="img/icon-vk.svg" width="22" height="12" alt="ВКонтакте" class="social__icon social__icon--vk">
+              </a>
             </li>
             <li class="social__item">
-              <a href="#" class="social__link social__link--instagram">Мы в Инстаграме</a>
+              <a href="#" class="social__link social__link--instagram">Мы в Инстаграме
+                <img src="img/icon-insta.svg" width="16" height="16" alt="Инстаграм" class="social__icon social__icon--insta">
+              </a>
             </li>
             <li class="social__item">
-              <a href="#" class="social__link social__link--facebook">Мы в Facebook</a>
+              <a href="#" class="social__link social__link--facebook">Мы в Facebook
+                <img src="img/icon-fb.svg" width="10" height="19" alt="ВКонтакте" class="social__icon social__icon--fb">
+              </a>
             </li>
           </ul>
         </div>

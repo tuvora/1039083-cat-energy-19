@@ -182,8 +182,23 @@
             <section class="example-pictures">
               <div class="example-pictures__wrapper">
                 <div class="example-pictures__image-box">
-                  <img src="img/before-mobile@1x.png" width="320" height="240" alt="До программы Cat Energy" class="example-pictures__image example-pictures__image--before">
-                  <img src="img/after-mobile@1x.png" width="320" height="240" alt="После программы Cat Energy" class="example-pictures__image example-pictures__image--after">
+                  <picture>
+                    <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png, img/before-desktop@2x.png 2x">
+
+                    <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png,
+                    img/before-tablet@2x.png 2x">
+
+                    <img src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" width="320" height="240" alt="До программы Cat Energy" class="example-pictures__image example-pictures__image--before">
+                  </picture>
+
+                  <picture>
+                    <source media="(min-width: 1300px)" srcset="img/after-desktop@1x.png, img/after-desktop@2x.png 2x">
+
+                    <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png,
+                    img/after-tablet@2x.png 2x">
+
+                    <img src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png 2x" width="320" height="240" alt="После программы Cat Energy" class="example-pictures__image example-pictures__image--after">
+                  </picture>
                 </div>
 
                 <div class="example-pictures__radio">
@@ -232,13 +247,19 @@
         <div class="page-footer__social social">
           <ul class="social__list">
             <li class="social__item">
-              <a href="#" class="social__link social__link--vkontakte">Мы Вконтакте</a>
+              <a href="#" class="social__link social__link--vkontakte">Мы Вконтакте
+                <img src="img/icon-vk.svg" width="22" height="12" alt="ВКонтакте" class="social__icon social__icon--vk">
+              </a>
             </li>
             <li class="social__item">
-              <a href="#" class="social__link social__link--instagram">Мы в Инстаграме</a>
+              <a href="#" class="social__link social__link--instagram">Мы в Инстаграме
+                <img src="img/icon-insta.svg" width="16" height="16" alt="Инстаграм" class="social__icon social__icon--insta">
+              </a>
             </li>
             <li class="social__item">
-              <a href="#" class="social__link social__link--facebook">Мы в Facebook</a>
+              <a href="#" class="social__link social__link--facebook">Мы в Facebook
+                <img src="img/icon-fb.svg" width="10" height="19" alt="ВКонтакте" class="social__icon social__icon--fb">
+              </a>
             </li>
           </ul>
         </div>
