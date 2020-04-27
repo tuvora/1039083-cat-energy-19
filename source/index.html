@@ -54,6 +54,10 @@
             <h1 class="page-intro__title">Функциональное питание для котов</h1>
             <b class="page-intro__slogan">Занялся собой? Займись котом!</b>
             <picture>
+              <source type="image/webp" media="(min-width: 1300px)" srcset="img/index-can-desktop@1x.webp, img/index-can-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/index-can-tablet@1x.webp, img/index-can-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/index-can-mobile@1x.webp, img/index-can-mobile@2x.webp 2x">
+
               <source media="(min-width: 1300px)" srcset="img/index-can-desktop@1x.png, img/index-can-desktop@2x.png 2x">
               <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg, img/index-can-tablet@2x.jpg 2x">
               <img src="img/index-can-mobile@1x.png" srcset="img/index-can-mobile@2x.png 2x" width="280" height="271" alt="Cat Energy Pro Курица 500г" class="page-intro__image">
@@ -83,7 +87,11 @@
 
               <p class="categories__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
 
-              <a href="#" class="categories__link">Каталог Slim</a>
+              <a href="#" class="categories__link">Каталог Slim
+                <svg class="icon icon--right-arrow" width="24" height="11">
+                  <use xlink:href="img/sprite.svg#icon-right-arrow"></use>
+                </svg>
+              </a>
             </div>
             <!-- /Одна категория -->
 
@@ -98,7 +106,11 @@
               <p class="categories__description">Заработать авторитет среди дворовых котов и даже собак?
               Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
 
-              <a href="#" class="categories__link">Каталог Pro</a>
+              <a href="#" class="categories__link">Каталог Pro
+                <svg class="icon icon--right-arrow" width="24" height="11">
+                  <use xlink:href="img/sprite.svg#icon-right-arrow"></use>
+                </svg>
+              </a>
             </div>
             <!-- /Одна категория -->
 
@@ -184,10 +196,8 @@
                 <div class="example-pictures__image-box">
                   <picture>
                     <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png, img/before-desktop@2x.png 2x">
-
                     <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png,
                     img/before-tablet@2x.png 2x">
-
                     <img src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" width="320" height="240" alt="До программы Cat Energy" class="example-pictures__image example-pictures__image--before">
                   </picture>
 
@@ -248,17 +258,23 @@
           <ul class="social__list">
             <li class="social__item">
               <a href="#" class="social__link social__link--vkontakte">Мы Вконтакте
-                <img src="img/icon-vk.svg" width="22" height="12" alt="ВКонтакте" class="social__icon social__icon--vk">
+                <svg class="social__icon social__icon--vk" width="16" height="16">
+                  <use xlink:href="img/sprite.svg#icon-vk"></use>
+                </svg>
               </a>
             </li>
             <li class="social__item">
               <a href="#" class="social__link social__link--instagram">Мы в Инстаграме
-                <img src="img/icon-insta.svg" width="16" height="16" alt="Инстаграм" class="social__icon social__icon--insta">
+                <svg class="social__icon social__icon--insta" width="10" height="19">
+                  <use xlink:href="img/sprite.svg#icon-insta"></use>
+                </svg>
               </a>
             </li>
             <li class="social__item">
               <a href="#" class="social__link social__link--facebook">Мы в Facebook
-                <img src="img/icon-fb.svg" width="10" height="19" alt="ВКонтакте" class="social__icon social__icon--fb">
+                <svg class="social__icon social__icon--fb" width="10" height="19">
+                  <use xlink:href="img/sprite.svg#icon-fb"></use>
+                </svg>
               </a>
             </li>
           </ul>
@@ -266,7 +282,9 @@
 
         <div class="page-footer__copyright copyright">
           <a href="https://htmlacademy.ru" class="copyright__link">HTML Academy</a>
-          <img src="img/htmlacademy.svg" width="34" height="30" alt="HTML Academy" class="copyright__icon">
+          <svg class="copyright__icon" width="27" height="34">
+            <use xlink:href="img/sprite.svg#icon-academy"></use>
+          </svg>
         </div>
 
       </div><!-- /.page-footer__wrapper -->
