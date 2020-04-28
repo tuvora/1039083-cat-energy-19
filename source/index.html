@@ -5,10 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <script src="js/picturefill.min.js"></script>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
     <title>HTML Academy: Кэт энерджи</title>
   </head>
   <body>
+
+    <div style="display: none;">
+      <include src="build/img/sprite.svg"></include>
+    </div>
+
     <!-- Шапка сайта -->
     <header class="page-header page-header--home">
       <div class="page-header__wrapper">
@@ -16,7 +21,7 @@
           <picture>
             <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
             <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-            <img src="img/logo-mobile.svg" width="191" height="38" alt="Cat Energy" class="page-header__logo-image" />
+            <img src="img/logo-mobile.svg" width="191" height="38" alt="Cat Energy" class="page-header__logo-image">
           </picture>
         </a>
 
