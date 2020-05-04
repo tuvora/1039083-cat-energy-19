@@ -11,6 +11,26 @@
   line-height: 24px;
 }
 
+.section-title--line {
+  position: relative;
+  display: inline-block;
+  padding-right: 24px;
+}
+
+.section-title--line::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  transform: translateY(50%);
+
+  display: block;
+  width: 500%;
+  height: 3px;
+
+  background-color: #68b738;
+}
+
 @media (min-width: @tablet-width) {
   .section-title {
     font-size: 60px;
@@ -19,5 +39,24 @@
   .section-title--mini {
     font-size: 36px;
     line-height: 36px;
+  }
+
+  .section-title--line {
+    padding-left: 24px;
+    transform: translateX(-24px);
+  }
+
+  .section-title--line::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    transform: translateY(50%);
+
+    display: block;
+    width: 500%;
+    height: 3px;
+
+    background-color: #68b738;
   }
 }

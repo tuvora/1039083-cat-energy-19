@@ -39,8 +39,20 @@
 .show-more__button {
   color: @base-text-color;
 
-  border: 1px solid #f2f2f2;
-  background-color: #f2f2f2;
+  border: 1px solid @background-color;
+  background-color: @background-color;
+
+  transition: all 0.2s;
+}
+
+.show-more__button:hover,
+.show-more__button:focus {
+  border-color: @light-grey;
+  background-color: @light-grey;
+}
+
+.show-more__button:active {
+  color: rgba(68, 68, 68, 0.3);
 }
 
 @media (min-width: @tablet-width) {

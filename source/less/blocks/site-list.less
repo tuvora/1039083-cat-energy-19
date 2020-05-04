@@ -13,8 +13,20 @@
   text-transform: uppercase;
   text-align: center;
   color: @black;
+
+  transition: all 0.2s;
 }
 
+.site-list__link:hover,
+.site-list__link:focus {
+  opacity: 0.6;
+  transition: all 0.2s;
+}
+
+.site-list__link:active {
+  opacity: 0.3;
+  transition: all 0.2s;
+}
 
 @media (min-width: @tablet-width) {
   .site-list__item {

@@ -50,10 +50,32 @@
   height: 45px;
   padding: 10px 15px;
 
+
+  font-family: @site-font;
   font-size: 16px;
   line-height: 18px;
+  color: @base-text-color;
+  text-transform: uppercase;
 
   border: 1px solid @light-grey;
+
+  transition: all 0.2s;
+}
+
+.user-form__field:hover,
+.user-form__comment-field:hover {
+  border-color: #cdcdcd;
+}
+
+.user-form__field:focus,
+.user-form__field:active,
+.user-form__comment-field:focus,
+.user-form__comment-field:active {
+  outline-color: @base-text-color;
+}
+
+.user-form__field.error {
+  outline-color: #ff8282;
 }
 
 .user-form__comment {
@@ -61,6 +83,7 @@
 }
 
 .user-form__title {
+  max-width: 210px;
   margin: 30px 0;
 
   font-family: @site-font;
@@ -73,6 +96,12 @@
 .user-form__comment-field {
   width: 100%;
   height: 150px;
+  padding: 15px;
+
+  font-family: @site-font;
+  font-size: 16px;
+  line-height: 18px;
+  color: @base-text-color;
 
   border: 1px solid @light-grey;
 
@@ -115,6 +144,7 @@
   }
 
   .user-form__title {
+    max-width: inherit;
     margin: 50px 0;
     font-size: 36px;
     line-height: 36px;
