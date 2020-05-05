@@ -1,6 +1,6 @@
 // Бургер меню
-let navMain = document.querySelector('.main-nav');
-let navToggle = document.querySelector('.main-nav__toggle');
+var navMain = document.querySelector('.main-nav');
+var navToggle = document.querySelector('.main-nav__toggle');
 
 navMain.classList.remove('main-nav--nojs');
 
@@ -14,7 +14,7 @@ navToggle.addEventListener('click', function() {
 
 // Карта
 ymaps.ready(function () {
-  let myMap = new ymaps.Map('map', {
+  var myMap = new ymaps.Map('map', {
       center: [59.938635, 30.323118],
       zoom: 17
     }),
