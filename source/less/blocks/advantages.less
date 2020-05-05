@@ -68,20 +68,20 @@
     min-height: 230px;
     margin-bottom: 90px;
     padding-right: 10%;
-  }
 
-  .advantages__item::before {
-    counter-increment: advantages;
-    content: counter(advantages);
-    position: absolute;
-    top: -40px;
-    right: 25%;
-    z-index: -1;
+    &::before {
+      counter-increment: advantages;
+      content: counter(advantages);
+      position: absolute;
+      top: -40px;
+      right: 25%;
+      z-index: -1;
 
-    font-family: @site-font;
-    font-size: 281px;
-    line-height: 281px;
-    color: #f2f2f2;
+      font-family: @site-font;
+      font-size: 281px;
+      line-height: 281px;
+      color: #f2f2f2;
+    }
   }
 
   .advantages__icon {

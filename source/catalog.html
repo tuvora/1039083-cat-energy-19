@@ -22,17 +22,17 @@
         </a>
 
         <!-- Навигация -->
-        <nav class="main-nav">
+        <nav class="main-nav main-nav--nojs">
           <button class="main-nav__toggle burger-button" type="button">
             <span class="visually-hidden">Открыть меню</span>
             <span class="burger-button__line"></span>
           </button>
 
           <ul class="main-nav__list site-list">
-            <li class="site-list__item">
+            <li class="site-list__item site-list__item--active">
               <a href="index.html" class="site-list__link">Главная</a>
             </li>
-            <li class="site-list__item  site-list__item--active">
+            <li class="site-list__item">
               <a class="site-list__link">Каталог продукции</a>
             </li>
             <li class="site-list__item">
@@ -482,7 +482,7 @@
       <!-- /Дополнительные товары -->
 
       <!-- Контакты -->
-      <section class="contacts contacts--background">
+      <section class="contacts">
         <div class="contacts__wrapper">
           <div class="contacts__info">
             <h2 class="visually-hidden">Наши контакты</h2>
@@ -492,22 +492,26 @@
           </div>
         </div>
 
-        <div class="contacts__map">
+        <div id="map" class="contacts__map">
           <picture>
+            <source type="image/webp" media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.webp, img/bg-map-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.webp, img/bg-map-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/bg-map-mobile@1x.webp, img/bg-map-mobile@2x.webp 2x">
+
             <source media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.png, img/bg-map-desktop@2x.png 2x">
-
             <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png, img/bg-map-tablet@2x.png 2x">
-
-            <img src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург" class="contacts__map-image">
+            <img src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x" width="320" height="375" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург" class="contacts__map-image">
           </picture>
         </div>
+      </section>
       <!-- /Контакты -->
-    </section></main>
+
+    </main>
 
     <footer class="page-footer">
       <div class="page-footer__wrapper">
 
-        <a class="page-footer__logo">
+        <a href="index.html" class="page-footer__logo">
           <img src="img/logo-footer.svg" width="128" height="24" alt="Cat Energy" class="page-footer__logo-image">
         </a>
 
@@ -548,5 +552,8 @@
 
       </div><!-- /.page-footer__wrapper -->
     </footer>
+
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=8cc6996c-e4b2-4bc9-be22-363f34db8754&lang=ru_RU"></script>
+    <script src="js/scripts.js"></script>
   </body>
 </html>

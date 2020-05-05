@@ -43,17 +43,18 @@
   background-color: @background-color;
 
   transition: all 0.2s;
+
+  &:hover,
+  &:focus {
+    background-color: @light-grey;
+    border-color: @light-grey;
+  }
+
+  &:active {
+    color: rgba(68, 68, 68, 0.3);
+  }
 }
 
-.show-more__button:hover,
-.show-more__button:focus {
-  border-color: @light-grey;
-  background-color: @light-grey;
-}
-
-.show-more__button:active {
-  color: rgba(68, 68, 68, 0.3);
-}
 
 @media (min-width: @tablet-width) {
   .show-more {

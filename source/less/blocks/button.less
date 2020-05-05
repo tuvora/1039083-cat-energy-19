@@ -16,16 +16,16 @@
   cursor: pointer;
 
   transition: all 0.2s;
-}
 
-.button:hover,
-.button:focus {
-  background-color: @green-hover;
-  border-color: @green-hover;
-}
+  &:hover,
+  &:focus {
+    background-color: @green-hover;
+    border-color: @green-hover;
+  }
 
-.button:active {
-  color: rgba(255, 255, 255, 0.3);
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 @media (min-width: @tablet-width) {

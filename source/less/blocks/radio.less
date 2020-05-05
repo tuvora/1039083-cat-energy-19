@@ -11,25 +11,27 @@
 
   display: flex;
   align-items: center;
-}
 
-.radio__label:active {
-  opacity: 0.3;
-}
+  cursor: pointer;
 
-.radio__label::before {
-  content: "";
-  display: inline-block;
-  width: 30px;
-  height: 30px;
-  margin-right: 16px;
+  &:active {
+    opacity: 0.3;
+  }
 
-  border: 1px solid @light-grey;
-  border-radius: 50%;
-}
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin-right: 16px;
 
-.radio__label:hover::before {
-  border-color: #bfbfbf;
+    border: 1px solid @light-grey;
+    border-radius: 50%;
+  }
+
+  &:hover::before {
+    border-color: #bfbfbf;
+  }
 }
 
 .radio__input:checked + .radio__label::after {
