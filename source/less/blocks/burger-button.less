@@ -8,6 +8,29 @@
 
   background-color: transparent;
   border: none;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    left: 10px;
+
+    display: block;
+    width: 24px;
+    height: 2px;
+
+    background-color: #222222;
+
+    transition: all 0.3s;
+  }
+
+  &::before {
+    top: 10px;
+  }
+
+  &::after {
+    bottom: 10px;
+  }
 }
 
 .burger-button__line {
@@ -19,23 +42,16 @@
   background-color: #222222;
 }
 
-.burger-button::before,
-.burger-button::after {
-  content: "";
-  position: absolute;
-  left: 10px;
+.main-nav--opened .burger-button {
+  &::before {
+    transform: translateY(8px) rotate(45deg);
+  }
 
-  display: block;
-  width: 24px;
-  height: 2px;
-
-  background-color: #222222;
+  &::after {
+    transform: translateY(-8px) rotate(135deg);
+  }
 }
 
-.burger-button::before {
-  top: 10px;
-}
-
-.burger-button::after {
-  bottom: 10px;
+.main-nav--opened .burger-button__line {
+  display: none;
 }

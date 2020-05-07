@@ -1,10 +1,37 @@
-.copyright__link {
-  font-size: 16px;
-  line-height: 1;
-}
-
 .copyright {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.copyright__link {
+  display: flex;
+  align-items: center;
+  width: 100%;
+
+  font-size: 16px;
+  line-height: 1;
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.copyright__icon {
+  margin-left: auto;
+}
+
+.copyright__link:hover svg,
+.copyright__link:focus svg {
+  fill: @green;
+}
+
+@media (min-width: @tablet-width) {
+  .copyright__link {
+    width: auto;
+  }
+
+  .copyright__icon {
+    margin-left: 23px;
+  }
 }

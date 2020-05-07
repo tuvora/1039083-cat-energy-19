@@ -8,6 +8,7 @@
 
 .example-pictures__image-box {
   margin-bottom: 35px;
+  text-align: center;
 }
 
 .example-pictures__image {
@@ -44,6 +45,7 @@
 @media (min-width: @tablet-width) {
   .example-pictures {
     background-color: @background-color;
+    background-image: linear-gradient(to right, @background-color 0%, @background-color 50%, #eaeaea 50%, #eaeaea 100%);
   }
 
   .example-pictures__wrapper {
@@ -65,6 +67,17 @@
     font-size: 20px;
 
     border-bottom: 1px dotted #bebebe;
+
+    transition: all 0.2s;
+
+    &:hover,
+    &:focus {
+      border-bottom-style: solid;
+    }
+
+    &:active {
+      border-bottom-style: none;
+    }
   }
 
   .example-pictures__range {
@@ -75,6 +88,6 @@
 
 @media (min-width: @desctop-width) {
   .example-pictures {
-    padding-bottom: 0;
+    padding-bottom: 65px;
   }
 }

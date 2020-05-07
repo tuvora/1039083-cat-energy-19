@@ -13,17 +13,27 @@
   text-transform: uppercase;
   text-align: center;
   color: @black;
-}
 
+  transition: all 0.2s;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
 
 @media (min-width: @tablet-width) {
   .site-list__item {
     margin-left: 36px;
     border: none;
-  }
 
-  .site-list__item--active {
-    border-bottom: 2px solid @green;
+    &--active {
+      border-bottom: 2px solid @green;
+    }
   }
 
   .site-list__link {

@@ -13,6 +13,19 @@
 
   background-color: @green;
   border: 1px solid @green;
+  cursor: pointer;
+
+  transition: all 0.2s;
+
+  &:hover,
+  &:focus {
+    background-color: @green-hover;
+    border-color: @green-hover;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 @media (min-width: @tablet-width) {
