@@ -1,13 +1,14 @@
 .statistics-list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .statistics-list__item {
   position: relative;
 
   width: 123px;
-  margin-right: auto;
+  margin-right: 32px;
   margin-bottom: 40px;
   padding: 15px 17px;
 
@@ -15,6 +16,10 @@
 
   border: 1px solid #cdcdcd;
   border-radius: 3px;
+}
+
+.statistics-list__item:nth-of-type(2) {
+  margin-right: 0;
 }
 
 .statistics-list__value {
@@ -44,8 +49,6 @@
 }
 
 .statistics-list__itog-sum {
-  margin: 0 auto;
-
   font-family: @site-font;
   font-size: 14px;
   line-height: 20px;

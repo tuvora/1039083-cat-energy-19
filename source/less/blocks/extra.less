@@ -1,3 +1,7 @@
+.extra {
+  overflow: hidden;
+}
+
 .extra__wrapper {
   padding: 0 20px;
 }
@@ -29,11 +33,16 @@
 }
 
 .extra__description {
+  width: 100%;
   margin-bottom: 14px;
 
   font-size: 14px;
   line-height: 14px;
   font-weight: 400;
+}
+
+.extra__price {
+  text-align: right;
 }
 
 .extra__button {
@@ -68,6 +77,7 @@
     padding: 27px 37px;
 
     border: 1px solid @light-grey;
+    border-top: none;
   }
 
   .extra__name {
@@ -75,6 +85,7 @@
   }
 
   .extra__description {
+    width: 50%;
     margin: 0;
   }
 
