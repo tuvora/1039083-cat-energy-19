@@ -29,15 +29,3 @@ ymaps.ready(function () {
   myMap.geoObjects
     .add(myPlacemark)
 });
-
-// Валидация форм
-
-function validate(form_id,email) {
-   var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
-   var address = document.forms[programm-form].elements[owner-contact-email].value;
-   if(reg.test(address) == false) {
-      alert('Введите корректный e-mail');
-      address.classList.add('user-form__field--error');
-      return false;
-   }
-}
