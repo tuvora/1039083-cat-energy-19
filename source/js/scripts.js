@@ -21,7 +21,7 @@ ymaps.ready(function () {
 
     myPlacemark = new ymaps.Placemark([59.938635, 30.323118], {}, {
       iconLayout: 'default#image',
-      iconImageHref: '../img/map-pin.png',
+      iconImageHref: 'img/map-pin.png',
       iconImageSize: [113, 106],
       iconImageOffset: [-56, -106]
     });
@@ -29,3 +29,15 @@ ymaps.ready(function () {
   myMap.geoObjects
     .add(myPlacemark)
 });
+
+// Валидация форм
+
+function validate(form_id,email) {
+   var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+   var address = document.forms[programm-form].elements[owner-contact-email].value;
+   if(reg.test(address) == false) {
+      alert('Введите корректный e-mail');
+      address.classList.add('user-form__field--error');
+      return false;
+   }
+}

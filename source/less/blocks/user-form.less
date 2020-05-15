@@ -66,6 +66,7 @@
   &:focus,
   &:active {
     border: 2px solid @base-text-color;
+    padding: 9px 14px;
   }
 
   &:--contacts {
@@ -73,7 +74,7 @@
   }
 }
 
-.user-form__field--error[required=""] {
+.user-form__field[required=""]:focus:invalid {
   border: 2px solid @error;
 }
 
@@ -90,7 +91,7 @@
   fill: @green;
 }
 
-.user-form__field--error ~ .user-form__icon {
+.user-form__field[required=""]:focus:invalid ~ .user-form__icon {
   fill: @error;
 }
 
@@ -131,6 +132,7 @@
   &:focus,
   &:active {
     border: 2px solid @base-text-color;
+    padding: 14px;
   }
 }
 
@@ -183,6 +185,11 @@
     padding: 10px 20px;
     font-size: 20px;
     line-height: 20px;
+
+    &:focus,
+    &:active {
+      padding: 10px 19px;
+    }
   }
 
   .user-form__icon {
